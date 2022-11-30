@@ -21,12 +21,20 @@
 }
 
 #object {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     position: relative;
     left: 780px;
-    top: 430px;
-    animation: slide 2000ms infinite linear;
+    top: 400px;
+}
+
+#points{
+    width: 800px;
+    top: 0%;
+    position: absolute;
+    text-align: center;
+    border: 0.5px solid green;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 
 #charImg {
@@ -35,14 +43,14 @@
 
 @keyframes jump{
     0%   {top: 450px;}
-    50%  {top: 390px;}
+    50%  {top: 350px;}
     100% {top: 450x;}
 }
 
 @keyframes slide{
     0%   {left: 800px;}
     50%  {left: 400px;}
-    100% {left: 0px;}
+    100% {left: -50px;}
 }
 
 .animationJump {
@@ -51,7 +59,7 @@
 }
 
 .animationSlide {
-    animation: jump 1000ms linear;
+    animation: slide 2000ms infinite linear;
 }
 
 
