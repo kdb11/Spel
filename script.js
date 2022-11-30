@@ -3,6 +3,7 @@ var image = document.getElementById("charImg");
 var enemy = document.getElementById("object");
 var points = document.getElementById("points");
 var pts = 0;
+
 function changeImg () {
     if(image.getAttribute('src') !== "Images/jump.png"){    
         image.src="Images/jump.png";
@@ -41,11 +42,12 @@ var checkDead = setInterval(function(){
         blockLeft>0 &&
         characterTop>=400){
             window.location.reload();
+            
         }
 },10)
 
 var getPts = setInterval(function(){
-        pts++;
+        pts += 100;
         points.innerHTML = pts;
 },2000)
 
