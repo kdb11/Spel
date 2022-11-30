@@ -7,7 +7,7 @@
     width: 800px;
     height: 575px;
     border: solid black;
-    background-image: url(/Images/background.jpg);
+    background-image: url(Images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
