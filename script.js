@@ -42,12 +42,15 @@ var checkDead = setInterval(function(){
         blockLeft>0 &&
         characterTop>=400){
             window.location.reload();
-            
+        }
+        else {
+            pts+= 1;
+            points.innerHTML = pts;
         }
 },10)
 
-var getPts = setInterval(function(){
+/* var getPts = setInterval(function(){
         pts += 100;
         points.innerHTML = pts;
 },2000)
-
+ */
